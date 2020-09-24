@@ -1,1 +1,3 @@
 Samuel Mast
+https://github.com/sama9843/Labs_3308/tree/master/Labs3308
+The lab4 folder is named labs_3308 for some reason but it is the folder for lab 4
