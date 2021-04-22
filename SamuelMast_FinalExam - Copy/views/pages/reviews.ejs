@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+<% include ../partials/menu %>
+
+    <div>
+        <h1 style="text-align: center;">Movie Reviews</h1>
+    </div>
+    <table class="table table-bordered" style="border-collapse: collapse; margin-left: auto; margin-right: auto;">
+        <tr>
+            <th>Movie</th><th>Review</th><th>Review Date</th>
+        </tr>
+        <% 
+        if (data) { 
+            var table = '';
+            data.forEach(function(item){
+                    table += '<tr><th>'+ item.movie_title +'</th><th>'+ item.review +'</th><th>'+ item.review_date +'</th></tr>';
+                }); %>
+            <%- table %> 
+        <% } %>
+    </table>
+
+<% include ../partials/footer %>
